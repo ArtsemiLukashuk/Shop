@@ -1,0 +1,28 @@
+.footer {
+    background-color: #1f1f1f;
+    color           : #ffff;
+}
+
+.footer__wrapper {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding-top    : 40px;
+    padding-bottom : 40px;
+}
+
+.footer__wrapper p {
+    margin: 0;
+}
+
+.footer__wrapper p:nth-child(2) {
+    font-size: 16px;
+}
+
+.footer__wrapper img:nth-child(3) {
+    max-width: 200px;
+}
+
+.footer__wrapper img {
+    max-width: 80px;
+}

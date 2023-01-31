@@ -1,0 +1,45 @@
+.container {
+    max-width: 1440px;
+    padding  : 0 15px;
+    margin   : 0 auto;
+}
+
+.grid-container {
+    width                : 100%;
+    display              : grid;
+    grid-gap             : 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top           : 20px;
+    margin-bottom        : 60px;
+}
+
+.product-grid {
+    grid-column          : 4 span;
+    grid-gap             : 20px;
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.filters {
+    position: relative;
+}
+
+.filters-price__input {
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top     : 20px;
+    left    : 0;
+}
+
+.absolut {
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+}
+
+.height {
+    height: 3000px;
+}

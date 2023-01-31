@@ -1,0 +1,91 @@
+.hide {
+    display: none;
+}
+
+.filter {
+    margin-top   : 30px;
+    margin-left  : 14px;
+    font-size    : 14px;
+    margin-bottom: 30px
+}
+
+.catalogbtn {
+    height          : 40px;
+    width           : 110px;
+    background-color: transparent;
+    border          : 1px solid #d9d9d9;
+    border-radius   : 30px;
+    transition      : all .1s ease-in-out;
+    margin-right    : 20px;
+    outline         : none;
+}
+
+.catalogbtn:hover {
+    border: 1px solid black;
+}
+
+.filter-price {
+    font-size    : 14px;
+    color        : #a3a3a3;
+    border-top   : 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    Padding      : 20px 0;
+    width        : 100%;
+}
+
+.catalog-sort-asc,
+.catalog-sort-desc {
+    border          : none;
+    background-color: transparent;
+    font-size       : 18px;
+    outline         : none;
+    cursor          : pointer;
+    color           : #a3a3a3;
+}
+
+.catalog-sort-asc.active,
+.catalog-sort-asc:hover,
+.catalog-sort-desc:hover,
+.catalog-sort-desc.active {
+    color: #0a84ff;
+}
+
+.filter-price {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+
+.filter-input__form {
+    width       : auto;
+    float       : right;
+    margin-right: 30px;
+    position    : relative;
+}
+
+
+.filter-input__btn {
+    width     : 42px;
+    height    : 42px;
+    background: none;
+    border    : none;
+    position  : absolute;
+    right     : 2px;
+}
+
+.filter-input {
+    width        : 250px;
+    height       : 42px;
+    padding-left : 15px;
+    border-radius: 42px;
+    border       : 1px solid #a3a3a3;
+    background   : transparent;
+    outline      : none;
+    position     : relative;
+    transition   : .3s linear;
+}
+
+.filter-input:focus {
+    width: 300px;
+    border: 1px solid #0a84ff;

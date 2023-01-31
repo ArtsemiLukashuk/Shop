@@ -1,0 +1,122 @@
+.products-nav .grid-container {
+    margin-top           : 60px;
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows   : 1fr 1fr;
+    gap                  : 10px;
+    grid-template-areas  :
+        "iphone macbook macbook ipad"
+        "iphone smart-home mac-mini accessories";
+}
+
+.grid-container .macbook {
+    grid-area: macbook;
+}
+
+.grid-container .iphone {
+    grid-area: iphone;
+}
+
+.grid-container .ipad {
+    grid-area: ipad;
+}
+
+.grid-container .accessories {
+    grid-area: accessories;
+}
+
+.grid-container .mac-mini {
+    grid-area: mac-mini;
+}
+
+.grid-container .smart-home {
+    grid-area: smart-home;
+}
+
+.product-nav {
+    display         : flex;
+    flex-direction  : column;
+    background-color: #f6f6f6;
+}
+
+.product-nav img {
+    width     : 240px;
+    object-fit: cover;
+}
+
+.product-nav .product-btn {
+    padding: 20px;
+}
+
+.macbook img {
+    width: 400px;
+}
+
+.product-nav .product-name {
+    font-size    : 24px;
+    font-weight  : bold;
+    margin-bottom: 10px;
+    padding      : 20px;
+}
+
+
+.product-nav .product-btn {
+    font-size      : 16px;
+    line-height    : 24px;
+    color          : #006DFE;
+    text-decoration: none;
+    display        : inline-block;
+    background     : url(../img/svg/arrow.svg) no-repeat 40% center;
+    transition     : 0.2s all;
+}
+
+.product-nav .product-btn:hover,
+.product-nav .product-btn:focus {
+    background: url(../img/svg/arrow.svg) no-repeat 42% center;
+}
+
+.grid-container .iphone {
+    background-image   : url('../img/products-nav/iphone.jpg');
+    background-position: center 190px;
+    background-size    : 225px;
+    background-repeat  : no-repeat;
+}
+
+.grid-container .macbook {
+    background-image   : url('../img/products-nav/macbook.jpg');
+    background-color   : #f6f6f6;
+    background-position: 5px top;
+    background-repeat  : no-repeat;
+    background-size    : contain;
+    height             : 345px;
+    padding            : 30px 30px 30px 380px;
+}
+
+.grid-container .ipad {
+    background-image   : url('../img/products-nav/ipad.jpg');
+    background-position: center 150px;
+    background-size    : 240px;
+    background-repeat  : no-repeat;
+}
+
+.grid-container .accessories {
+    background-image   : url('../img/products-nav/accessories.jpg');
+    background-position: 100% 100%;
+    background-size    : 332px;
+    background-repeat  : no-repeat;
+}
+
+.grid-container .mac-mini {
+    background-image   : url('../img/products-nav/mac-mini.jpg');
+    background-position: center 225px;
+    background-size    : 280px;
+    background-repeat  : no-repeat;
+}
+
+.grid-container .smart-home {
+    background-image   : url('../img/products-nav/smart-home.jpg');
+    background-color   : #f6f6f6;
+    background-position: center 140px;
+    background-size    : 360px;
+    background-repeat  : no-repeat;
+}

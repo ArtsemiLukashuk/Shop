@@ -1,0 +1,40 @@
+.cart-content__list {
+    overflow-y: scroll;
+}
+
+.cart-content__list::-webkit-scrollbar {
+    width : 6px;
+    height: auto;
+}
+
+.cart-content__list::-webkit-scrollbar-thumb {
+    background: #0080ff;
+    border    : 0px none #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #bdbbbb), color-stop(1.00, #777));
+    background: -webkit-linear-gradient(#bdbbbb, #777);
+    background: -moz-linear-gradient(#bdbbbb, #777);
+    background: -o-linear-gradient(#bdbbbb, #777);
+    background: -ms-linear-gradient(#bdbbbb, #777);
+    background: linear-gradient(#bdbbbb, #777);
+}
+
+.cart-content__list::-webkit-scrollbar-thumb:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #4b4b4b), color-stop(1.00, #131313));
+    background: -webkit-linear-gradient(#4b4b4b, #131313);
+    background: -moz-linear-gradient(#4b4b4b, #131313);
+    background: -o-linear-gradient(#4b4b4b, #131313);
+    background: -ms-linear-gradient(#4b4b4b, #131313);
+    background: linear-gradient(#4b4b4b, #131313);
+}
+
+.cart-content__list::-webkit-scrollbar-thumb:active {
+    background: #111;
+}
+
+.cart-content__list::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.cart-content__list::-webkit-scrollbar-corner {
+    background: transparent;
+}

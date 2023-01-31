@@ -1,0 +1,183 @@
+.disable-scroll {
+    position: relative;
+    overflow: hidden;
+    height  : 100vh;
+    position: fixed;
+    left    : 0;
+    top     : 0;
+    width   : 100%;
+}
+
+.modal {
+    --transition-time: 0.3s;
+    position         : fixed;
+    left             : 0;
+    top              : 0;
+    right            : 0;
+    bottom           : 0;
+    z-index          : 1000;
+    background-color : rgba(0, 0, 0, 0.7);
+    cursor           : pointer;
+    overflow-y       : auto;
+    overflow-x       : hidden;
+    text-align       : center;
+    opacity          : 0;
+    visibility       : hidden;
+    transition       : var(--transition-time);
+}
+
+.modal::before {
+    content       : "";
+    display       : inline-block;
+    vertical-align: middle;
+    height        : 100%;
+}
+
+.modal__container {
+    position        : relative;
+    max-width       : 560px;
+    margin          : 50px auto;
+    display         : inline-block;
+    vertical-align  : middle;
+    background-color: #fff;
+    border-radius   : 10px;
+    padding         : 40px;
+    cursor          : default;
+    text-align      : left;
+    display         : none;
+}
+
+.modal__close {
+    position: absolute;
+    right   : 0;
+    top     : 0;
+}
+
+.modal.is-open {
+    opacity   : 1;
+    visibility: visible;
+    transition: var(--transition-time);
+}
+
+.modal__container.modal-open {
+    display: inline-block;
+}
+
+.fade {
+    opacity   : 0;
+    transition: var(--transition-time);
+}
+
+.fade.animate-open {
+    opacity   : 1;
+    transition: var(--transition-time);
+}
+
+.fadeInUp {
+    opacity   : 0;
+    transform : translateY(-100px);
+    transition: var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+    opacity   : 1;
+    transform : translateY(0);
+    transition: var(--transition-time);
+}
+
+
+/* asasdsa */
+
+.order-modal__title {
+    padding-bottom: 30px;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cart-product__ttlprice-modal {
+    width: 105px;
+}
+
+.cart-title__modal {
+    font-weight: bold;
+}
+
+.cart-product__quantity-modal button {
+    width: 26px;
+}
+
+.cart-product__delete-modal {
+    width: 50px;
+}
+
+.order-modal__summ {
+    padding-top   : 30px;
+    border-top    : 1px solid rgba(0, 0, 0, 0.2);
+    text-align    : right;
+    font-size     : 16px;
+    font-weight   : bold;
+    padding-bottom: 30px;
+}
+
+.order-modal__text {
+    margin-bottom: 30px;
+    font-size    : 14px;
+    color        : #111111;
+}
+
+.order-modal__form {
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+
+.order__label {
+    display       : flex;
+    flex-direction: column;
+}
+
+.order-modal__form-sum {
+    color        : #000000;
+    font-weight  : bold;
+    font-size    : 22px;
+    text-align   : right;
+    margin-bottom: 20px;
+}
+
+.order__text {
+    font-size     : 16px;
+    padding-bottom: 5px;
+}
+
+.order__input {
+    border       : 1px solid #cfcfcf;
+    height       : 56px;
+    width        : 100%;
+    outline      : none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding      : 0px 20px;
+}
+
+.order__btn {
+    border-radius: 30px;
+}
+
+.order__confidence {
+    margin-top: 20px;
+    font-size : 14px;
+    color     : #707070;
+    text-align: center;
+}
+
+.cart-product__price-modal {
+    display: none;
+}
+
+.btn-reset {
+    border          : none;
+    background-color: transparent;
+    outline         : none;
+    padding         : 20px;
+    font-size       : 22px;
+    cursor          : pointer;
+}

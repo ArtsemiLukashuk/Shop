@@ -1,0 +1,32 @@
+.advantages-cards {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.advantages-card_img img {
+    height       : 45px;
+    margin-bottom: 10px;
+}
+
+.advantages-cards__wrapper {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.advantages-cards_card {
+    max-width    : 300px;
+    margin-bottom: 20px;
+}
+
+.advantages-card_title {
+    color        : #0a84ff;
+    font-size    : 18px;
+    font-weight  : bold;
+    margin-bottom: 10px;
+}
+
+.advantages-card_subtitle {
+    color: #898989;
+}

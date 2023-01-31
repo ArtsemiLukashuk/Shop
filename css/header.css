@@ -1,0 +1,66 @@
+.header {
+    position  : relative;
+    z-index   : 100;
+    background: black;
+    box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+}
+
+.nav {
+    display    : flex;
+    align-items: center;
+}
+
+.header__wrapper {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.nav__list {
+    display    : flex;
+    align-items: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.nav__link {
+    font-size  : 16px;
+    line-height: 19px;
+    text-align : right;
+    color      : #fff;
+    transition : color .3s;
+}
+
+.nav__link:hover {
+    color: #0a84ff;
+}
+
+.fa-user-o {
+    color: #fff;
+}
+
+.header__logo {
+    color    : #fff;
+    font-size: 34px;
+}
+
+.header__auth {
+    margin-left: 60px;
+}
+
+.logout {
+    color      : #0a84ff;
+    margin-left: 10px;
+}
+
+.registration,
+.login {
+    transition: color .3s;
+}
+
+.registration:hover,
+.login:hover {
+    color: #0a84ff;
+}

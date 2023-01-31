@@ -1,0 +1,73 @@
+.products-advertising {
+    margin-top      : 20px;
+    background-color: #f6f6f6;
+}
+
+.products-advertising__wrapper {
+    max-width      : 1440px;
+    padding        : 0 15px;
+    margin         : 0 auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.product-advertising {
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : nowrap;
+    justify-content : center;
+    align-items     : center;
+    cursor          : pointer;
+    background-color: #f6f6f6;
+    padding         : 20px;
+}
+
+.product-advertising .product-info {
+    font-size: 16px;
+}
+
+.product-advertising img {
+    width       : 160px;
+    object-fit  : cover;
+    margin-right: 30px;
+}
+
+
+.product-advertising .product-name {
+    font-size  : 18px;
+    font-weight: bold;
+}
+
+.product-advertising .product-name,
+.product-advertising .product-text {
+    margin-bottom: 20px;
+}
+
+.product-advertising .product-btn {
+    margin-top      : 10px;
+    border          : none;
+    background-color: transparent;
+    color           : #0a84ff;
+}
+
+.product-advertising .product-btn {
+    font-size      : 16px;
+    line-height    : 24px;
+    color          : #006DFE;
+    text-decoration: none;
+    display        : inline-block;
+    padding-right  : 50px;
+    background     : url(../img/svg/arrow.svg) no-repeat 95% center;
+    transition     : 0.2s all;
+}
+
+.product-advertising .product-btn:hover,
+.product-advertising .product-btn:focus {
+    background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+.product-info__name {
+    font-weight  : bold;
+    margin-bottom: 20px;
+}
