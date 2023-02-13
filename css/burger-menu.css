@@ -7,12 +7,12 @@
 
 	.header__burger {
 		display : block;
-		width   : 30px;
-		height  : 20px;
+		width   : 35px;
+		height  : 25px;
 		position: absolute;
-		left    : 40px;
+		left    : 45px;
 		top     : 40%;
-		z-index : 50;
+		z-index : 55;
 	}
 
 	.header__burger:before,
@@ -21,19 +21,19 @@
 		background: #fff;
 		position  : absolute;
 		width     : 100%;
-		height    : 2px;
-		right     : 10px;
-		bottom    : 25px;
+		height    : 3px;
+		right     : 15px;
+		bottom    : 30px;
 		transition: all 0.3s ease 0s;
 		z-index   : 50;
 	}
 
 	.header__burger:before {
-		top: 0;
+		top: 1;
 	}
 
 	.header__burger::after {
-		bottom: 0;
+		bottom: 1;
 	}
 
 	.header__burger span {
